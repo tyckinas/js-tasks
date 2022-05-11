@@ -155,8 +155,10 @@ console.groupCollapsed(
     let stringWithIndexes = "";
     for (let i = 0; i < arr.length; i++) {
       stringWithIndexes += i + " ";
+      if(i === arr.length - 1){
+        console.log(stringWithIndexes)
+      }
     }
-    return stringWithIndexes;
   }
   console.log(printIndexesRow(elements));
 }
@@ -170,11 +172,13 @@ console.groupCollapsed(
   function printValuesRow(arr) {
     let stringWithValues = "";
     for (let i = 0; i < arr.length; i++) {
-      stringWithValues += arr[i] + " ";
+      stringWithValues += arr[i] + ", ";
+      if(i === arr.length - 1){
+        console.log(stringWithValues.slice(0 , stringWithValues.length -2))
+      }
     }
-    return stringWithValues;
   }
-  console.log(printValuesRow(elements));
+  printValuesRow(elements);
 }
 console.groupEnd();
 
