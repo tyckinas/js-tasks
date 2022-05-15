@@ -27,7 +27,7 @@ console.groupCollapsed(
       }
       arr[i] = arr[i + 1];
     }
-    arr.splice(arr.length - 1, arr.length - 1);
+    arr.splice(arr.length - 1);
     return removedEl;
   }
   console.log(shift(elementsCopy), elementsCopy);

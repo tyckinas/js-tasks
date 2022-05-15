@@ -163,7 +163,7 @@ console.group("8. Visas neigiamas vertes masyve padaryti teigiamomis ir išsaugo
       if(arr[i] <  0){
 
         newArr.push(arr[i] * -1)
-      }
+      }else newArr.push(arr[i])
     }
     return newArr
   }

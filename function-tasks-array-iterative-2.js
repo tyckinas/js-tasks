@@ -243,9 +243,9 @@ console.groupCollapsed(
     (student) => student.faculty === "Elektros ir elektronikos fakultetas"
   );
   const electrStudentsAvg = electrStudents.forEach(({ modules }) => {
-    modules.forEach(({ marks }, i) => {
+    modules.forEach(({ marks, title }) => {
       console.log(
-        modules[i].title +
+        title +
           " " +
           marks.reduce((sum, currValue, i, arr) => {
             return (sum += currValue / arr.length);

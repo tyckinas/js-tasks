@@ -58,7 +58,7 @@ console.groupCollapsed("1. Atspausdinkite visus žmones eilutėmis");
 {
   // ...sprendimas ir spausdinimas
   people.forEach((person) => {
-    console.log(JSON.stringify(person));
+    console.log(person);
   });
 }
 console.groupEnd();
@@ -145,7 +145,7 @@ console.groupCollapsed(
 );
 {
   // ...sprendimas ir spausdinimas
-  const calcDriversByGender =  people.reduce((prevValue, currValue) => {
+  const calcDriversByGender =  people.reduce((prevValue) => {
     return prevValue = {
       femaleDrivers : people.filter(({sex, hasCar}) => sex === 'female' && hasCar ===true ).length,
       maleDrivers : people.filter(({sex, hasCar}) => sex === 'male' && hasCar ===true ).length

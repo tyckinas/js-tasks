@@ -63,11 +63,15 @@ console.groupEnd();
 console.groupCollapsed("4 - https://edabit.com/challenge/i6YqzHcSiPiEQKjeX");
 {
   function maximumScore(arr) {
-    let result = 0;
-    for (let i = 0; i < arr.length; i++) {
-      result += arr[i].score;
-    }
-    return result;
+    // let result = 0;
+    // for (let i = 0; i < arr.length; i++) {
+    //   result += arr[i].score;
+    // }
+    // return result;
+
+    return arr.reduce((sum , {score}) => {
+      return sum+= score
+    }, 0)
   }
   console.log(
     maximumScore([

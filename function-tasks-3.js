@@ -720,6 +720,7 @@ console.group("30. Sukurkite funkciją, kuri taiso pastraipos klaidas");
 {
   function capitalizeFirstLetter(str) {
     // code ...
+    return str[0].toUpperCase()
   }
 
   function splitIntoSentences(paragraph) {
